@@ -2,6 +2,8 @@ def study_schedule(permanence_period, target_time):
     quantity = 0
     if type(target_time) != int:
         return None
+    if type(permanence_period) != int:
+        return None
     else:
         while target_time > permanence_period:
             target_time -= permanence_period
